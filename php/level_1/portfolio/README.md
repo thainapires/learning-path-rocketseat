@@ -19,7 +19,7 @@ Portfólio de projetos simples.
 ### 🔎 Preview:
 
 <p align="center">
-  <img src="../assets/projects-screenshots/00-portfolio.png">
+  <img src="../../assets/projects-screenshots/00-portfolio.png">
 </p>
 
 ### 📌 Como rodar?
