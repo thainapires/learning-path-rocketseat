@@ -1,11 +1,9 @@
 package main
 
-import (
-	"myFirstGoProject/funcoes"
-	"myFirstGoProject/variaveis"
-)
+import "myFirstGoProject/tiposconstantes"
 
 func main() {
-	funcoes.Print_funcoes()
-	variaveis.Print_variaveis()
+	//funcoes.Print_funcoes()
+	//variaveis.Print_variaveis()
+	tiposconstantes.PrintTiposConstantes()
 }
