@@ -38,8 +38,20 @@ docker exec -it 440d7577461d bash
 docker volume create primeiro-volume
 docker volume inspect primeiro-volume
 
-## 📌 Como rodar?
+docker run -v primeiro-volume:/usr/src/app --network primeira-network -p 3001:3000 -d api:v5
 
-Sem network e volumes:
+#### 3. Build
 
-```docker run -p 3001:3000 -d api```
+docker build -t api:v4 .
+
+#### 4. Database
+
+docker run -d --network primeira-network -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=api-db -e MYSQL_USER=admin -e MYSQL_PASSWORD=root --name mysql mysql:8
+
+#### 5. Docker Compose
+
+docker-compose up -d
+docker compose down
+docker compose logs
+docker compose up -d --build
+
